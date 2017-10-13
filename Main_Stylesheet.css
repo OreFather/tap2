@@ -1,0 +1,19 @@
+button{
+    padding: 150px 150px;
+    position: relative;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    vertical-align: middle;
+}
+.flex {
+    display: flex;
+}
+.flex > div {
+    width: 50%;
+    padding: 30px;
+    align-content: center;
+}
+.flex > div:first-child {
+    margin-right: 5px;
+    align-content: center;
+}
