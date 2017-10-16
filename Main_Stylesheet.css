@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 button{
-    padding: 150px 150px;
+    /*padding: 150px 150px;*/
     position: relative;
     -webkit-column-count: 2;
     -moz-column-count: 2;
     vertical-align: middle;
+    background-color: orange;
+    background-size: 6px;
+}
+button:focus {
+    background-color: blue;
 }
 .flex {
     display: flex;
@@ -27,7 +32,12 @@ button{
 h1 {
     text-align: center;
     color: orange;
-    font-size: 8em;
+    font-size: 10em;
     font-weight: bold;
     font-family: 'Righteous', cursive;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+body {
+    background-image: url(media/orangeyellow-background.jpg);
 }
