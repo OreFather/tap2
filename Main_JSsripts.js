@@ -1,14 +1,18 @@
 var buttonCount = 0;
-function selection(a, b) {
+
+function selection(b) {
     buttonCount = buttonCount + 1;
-    
-    if (buttonCount == 2) {
-        dataSearch(a, b)
+    if (document.getElementById(b).style.backgroundColor == "blue") {
+        document.getElementById(b).style.backgroundColor = "orange";
     } else {
-        
+        document.getElementById(b).style.backgroundColor = "blue";
+    }
+    if (buttonCount == 2) {
+        buttonCount = 0;
+        dataSearch();
     }
         
 }
-function dataSearch(l, m) {
-    
+function dataSearch() {
+    if ()
 }
