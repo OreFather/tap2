@@ -1,18 +1,17 @@
-var buttonCount = 0;
+var choiceOne = "null";
+var choiceTwo = "null";
 
 function selection(b) {
-    buttonCount = buttonCount + 1;
-    if (document.getElementById(b).style.backgroundColor == "blue") {
+    if (document.getElementById(b).style.backgroundColor == "lightblue") {
         document.getElementById(b).style.backgroundColor = "orange";
     } else {
-        document.getElementById(b).style.backgroundColor = "blue";
+        document.getElementById(b).style.backgroundColor = "lightblue";
     }
-    if (buttonCount == 2) {
-        buttonCount = 0;
-        dataSearch();
-    }
+    if (choiceOne = "null") {
+        choiceOne = b;
+    } else {
+        choiceTwo = b;
         
-}
-function dataSearch() {
-    if ()
+    }
+
 }

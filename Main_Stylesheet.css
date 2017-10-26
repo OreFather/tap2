@@ -7,6 +7,11 @@ button{
     vertical-align: middle;
     background-color: orange;
     background-size: 6px;
+    border-radius: 50px;
+    padding: 10px;
+}
+button img {
+    border-radius: 50px;
 }
 button:focus {
     background-color: blue;
@@ -26,13 +31,10 @@ button:focus {
 .flex div button {
     margin-bottom: 10em;
 }
-#logo {
-    margin: 1.5em;
-}
 h1 {
     text-align: center;
     color: orange;
-    font-size: 10em;
+    font-size: 12em;
     font-weight: bold;
     font-family: 'Righteous', cursive;
     -webkit-text-stroke-width: 1px;
