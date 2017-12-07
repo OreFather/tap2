@@ -3,6 +3,7 @@ var choiceTwo = "null";
 
 $(document).ready(function(){
     $(".popuptext").hide();
+    $(".popuptext").css("display:", "none");
 })
 
 function selection(b) {

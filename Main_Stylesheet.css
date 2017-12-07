@@ -45,20 +45,80 @@ body {
 }
 
 
-/*The popup layout*/
+/*The popup layout Level 0*/
 .choice0 {
     display: flex;
     flex-direction: row;
+    border: 30px solid darkorange;
+    border-radius: 50px;
+    background-color: chocolate;
+    margin-bottom: 20px;
+}
+#choice0Image img {
+    border-radius: 5%;
 }
 #choice0Image {
-    
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
 }
 #choice0Name {
-    
+    font-size: 60px;
 }
 #choice0Skill {
-    
+    margin-top: 20px;
+    font-size: 40px;
 }
 
 
 
+.choice1 {
+    display: flex;
+    flex-direction: row;
+    border: 30px solid darkorange;
+    border-radius: 50px;
+    background-color: chocolate;
+    margin-bottom: 20px;
+}
+#choice1Image img {
+    border-radius: 5%;
+}
+#choice1Image {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+#choice1Name {
+    font-size: 60px;
+}
+#choice1Skill {
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+
+
+
+.choice2 {
+    display: flex;
+    flex-direction: row;
+    border: 30px solid darkorange;
+    border-radius: 50px;
+    background-color: chocolate;
+    margin-bottom: 20px;
+}
+#choice2Image img {
+    border-radius: 5%;
+}
+#choice2Image {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+#choice2Name {
+    font-size: 60px;
+}
+#choice2Skill {
+    margin-top: 20px;
+    font-size: 40px;
+}
