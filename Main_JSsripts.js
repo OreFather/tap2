@@ -1,10 +1,10 @@
 var choiceOne = "null";
 var choiceTwo = "null";
 
-function hideMe(id) {
-    var e = document.getElementById(id);
-    e.style.display = 'none';
-    }
+$(document).ready(function(){
+    $(".popuptext").hide();
+})
+
 function selection(b) {
     if (document.getElementById(b).style.backgroundColor == "lightblue") {
         document.getElementById(b).style.backgroundColor = "orange";
@@ -31,7 +31,9 @@ function dataSearch(arg1, arg2) {
     if (arg1 == "coco" || arg2 == "coco") {
     $.getJSON("json/chocolate.json", function(json){
         if (arg1 == "fruit" || arg2 == "fruit") {
-            $("").append(json.ChocolateFruit.name);
+            $("#choice0Name").append(json.ChocolateFruit.name);
+            $("#choice0Image").append("<img src=" + json.ChocolateFruit.imgPath + " >");
+            $("#choice0Skill").append(json.ChocolateFruit.skill);
         } else if (arg1 == "cheese" || arg2 == "cheese") {
             
         } else if (arg1 == "candy" || arg2 == "candy") {
@@ -41,9 +43,14 @@ function dataSearch(arg1, arg2) {
         } else if (arg1 == "iceCream" || arg2 == "iceCream") {
             
         }else {
-            console.log("Somthing went wrong in dataSearch() - arg1= " + arg1 + " arg2 = " + arg2);
+            console.log("Somthing went wrong in dataSearch() - arg1= " + arg1 + " arg2= " + arg2);
         }
-    }
+        console.log("--Exited chococlate function--");
+        $(".flex").hide();
+        $(".popuptext").show();
+        
+        
+    })
     } else if (arg1 == "cheese" || arg2 == "cheese") {
         if (arg1 == "coco" || arg2 == "coco") {
             
