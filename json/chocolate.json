@@ -1,0 +1,33 @@
+{
+    "ChocolatePB": 
+        {
+      "name": "Peanut Butter Filled Chocolate Cupcakes",
+      "imgPath": "/media/peanut-cupcake.jpg",
+      "recPath": "http://www.bake-aholic.com/peanut-butter-filled-chocolate-cupcakes/#.WihkqUqnHIU"
+    },
+    "ChocolateIceCream": 
+        {
+      "name": "Brownies and Ice Cream",
+      "imgPath": "/media/brownie-ice-cream-sandwich.png",
+      "recPath": "http://www.bake-aholic.com/brownie-ice-cream-sandwiches/#.WgN6VbpFyP8"
+    },
+    "ChocolateFruit": 
+        {
+      "name": "Chocolate Waffles",
+      "imgPath": "/media/choco-waffo.jpg",
+      "recPath": "http://www.bake-aholic.com/chocolate-waffles-with-lorraines-wickedly-good-hot-fudge-sauce/#.WihlLUqnHIU"
+    },
+    "ChocolateCandy": 
+        {
+      "name": "“Leftover’s” cookies",
+      "imgPath": "/media/candy-cookie1-236x300.jpg",
+      "recPath": "http://www.bake-aholic.com/leftovers-cookies/#.WihlhkqnHIU"
+    },
+    "ChocolateCheese": 
+        {
+      "name": "Chocolate Whoopie Pies with Strawberry Cream Cheese Filling",
+      "imgPath": "/media/wHOPEE.jpg",
+      "recPath": "http://www.bake-aholic.com/chocolate-whoopie-pies-with-strawberry-cream-cheese-filling/#.WihmAkqnHIU"
+    }
+}
+    

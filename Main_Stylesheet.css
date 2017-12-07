@@ -43,7 +43,7 @@ h1 {
 body {
     background-image: url(media/orangeyellow-background.jpg);
 }
-/*.popup {
+.popup {
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -52,7 +52,7 @@ body {
     -ms-user-select: none;
     user-select: none;
 }
-*/
+
 /* The actual popup 
 .popup .popuptext {
     visibility: hidden;

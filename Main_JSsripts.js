@@ -15,56 +15,107 @@ function selection(b) {
         }
     } else {
         document.getElementById(b).style.backgroundColor = "lightblue";
-        if (choiceOne = "null") {
+        if (choiceOne == "null") {
             choiceOne = b;
         } else {
             choiceTwo = b;
             document.getElementById(choiceOne).style.background = "orange";
             document.getElementById(choiceTwo).style.background = "orange";
             dataSearch(choiceOne, choiceTwo);
-            popup();
     }
 }
 }
-function popup() {
-    var popup = document.getElementById("popup");
-    popup.classList.toggle("show");
-}
+
+
 function dataSearch(arg1, arg2) {
-    var fullList = recipies[arg1][arg2];
-    return fullList[key];
-}
-var lePicture;
-var leLink;
-var recipies = {
-    "chocolate": {"iceCream": {"image": "/media/brownie-ice-cream-sandwich.png", "name": "Brownies and Ice Cream", "link": "http://www.bake-aholic.com/brownie-ice-cream-sandwiches/#.WgN6VbpFyP8"},
-                  "peanutButter": {"image": somehting, "name": something, "link": something}, 
-                  "cheese": {"image": somehting, "name": something, "link": something}, 
-                  "fruit": {"image": somehting, "name": something, "link": something}, 
-                  "candy": {"image": somehting, "name": something, "link": something}},
-    "peanutButter": {"iceCream": {"image": somehting, "name": something, "link": something},
-                    "chocolate": {"image": somehting, "name": something, "link": something},
-                    "cheese": {"image": somehting, "name": something, "link": something},
-                    "fruit": {"image": somehting, "name": something, "link": something},
-                    "candy": {"image": somehting, "name": something, "link": something}},
-    "iceCream": {"chocolate": {"image": somehting, "name": something, "link": something}, 
-              "peanutButter": {"image": somehting, "name": something, "link": something}, 
-              "cheese": {"image": somehting, "name": something, "link": something}, 
-              "fruit": {"image": somehting, "name": something, "link": something}, 
-              "candy": {"image": somehting, "name": something, "link": something}},
-    "cheese": {"chocolate": {"image": somehting, "name": something, "link": something}, 
-              "peanutButter": {"image": somehting, "name": something, "link": something}, 
-              "iceCream": {"image": somehting, "name": something, "link": something}, 
-              "fruit": {"image": somehting, "name": something, "link": something}, 
-              "candy": {"image": somehting, "name": something, "link": something}},
-    "fruit": {"chocolate": {"image": somehting, "name": something, "link": something}, 
-              "peanutButter": {"image": somehting, "name": something, "link": something}, 
-              "cheese": {"image": somehting, "name": something, "link": something}, 
-              "iceCream": {"image": somehting, "name": something, "link": something}, 
-              "candy": {"image": somehting, "name": something, "link": something}},
-    "candy": {"chocolate": {"image": somehting, "name": something, "link": something}, 
-              "peanutButter": {"image": somehting, "name": something, "link": something}, 
-              "cheese": {"image": somehting, "name": something, "link": something}, 
-              "fruit": {"image": somehting, "name": something, "link": something}, 
-              "iceCream": {"image": somehting, "name": something, "link": something}}
+    if (arg1 == "coco" || arg2 == "coco") {
+    $.getJSON("json/chocolate.json", function(json){
+        if (arg1 == "fruit" || arg2 == "fruit") {
+            $("").append(json.ChocolateFruit.name);
+        } else if (arg1 == "cheese" || arg2 == "cheese") {
+            
+        } else if (arg1 == "candy" || arg2 == "candy") {
+            
+        } else if (arg1 == "pB" || arg2 == "pB") {
+            
+        } else if (arg1 == "iceCream" || arg2 == "iceCream") {
+            
+        }else {
+            console.log("Somthing went wrong in dataSearch() - arg1= " + arg1 + " arg2 = " + arg2);
         }
+    }
+    } else if (arg1 == "cheese" || arg2 == "cheese") {
+        if (arg1 == "coco" || arg2 == "coco") {
+            
+        } else if (arg1 == "fruit" || arg2 == "fruit") {
+            
+        } else if (arg1 == "candy" || arg2 == "candy") {
+            
+        } else if (arg1 == "pB" || arg2 == "pB") {
+            
+        } else if (arg1 == "iceCream" || arg2 == "iceCream") {
+            
+        }else {
+            console.log("Somthing went wrong in dataSearch() - arg1= " + arg1 + " arg2 = " + arg2);
+        }
+        
+    } else if (arg1 == "candy" || arg2 == "candy") {
+        if (arg1 == "coco" || arg2 == "coco") {
+            
+        } else if (arg1 == "cheese" || arg2 == "cheese") {
+            
+        } else if (arg1 == "fruit" || arg2 == "fruit") {
+            
+        } else if (arg1 == "pB" || arg2 == "pB") {
+            
+        } else if (arg1 == "iceCream" || arg2 == "iceCream") {
+            
+        }else {
+            console.log("Somthing went wrong in dataSearch() - arg1= " + arg1 + " arg2 = " + arg2);
+        }
+    } else if (arg1 == "pB" || arg2 == "pB") {
+        if (arg1 == "coco" || arg2 == "coco") {
+            
+        } else if (arg1 == "cheese" || arg2 == "cheese") {
+            
+        } else if (arg1 == "fruit" || arg2 == "fruit") {
+            
+        } else if (arg1 == "candy" || arg2 == "candy") {
+            
+        } else if (arg1 == "iceCream" || arg2 == "iceCream") {
+            
+        }else {
+            console.log("Somthing went wrong in dataSearch() - arg1= " + arg1 + " arg2 = " + arg2);
+        }
+    } else if (arg1 == "fruit" || arg2 == "fruit") {
+        if (arg1 == "coco" || arg2 == "coco") {
+            
+        } else if (arg1 == "cheese" || arg2 == "cheese") {
+            
+        } else if (arg1 == "candy" || arg2 == "candy") {
+            
+        } else if (arg1 == "pB" || arg2 == "pB") {
+            
+        } else if (arg1 == "iceCream" || arg2 == "iceCream") {
+            
+        }else {
+            console.log("Somthing went wrong in dataSearch() - arg1= " + arg1 + " arg2 = " + arg2);
+        }
+    } else if (arg1 == "iceCream" || arg2 == "iceCream") {
+        if (arg1 == "coco" || arg2 == "coco") {
+            
+        } else if (arg1 == "cheese" || arg2 == "cheese") {
+            
+        } else if (arg1 == "fruit" || arg2 == "fruit") {
+            
+        } else if (arg1 == "candy" || arg2 == "candy") {
+            
+        } else if (arg1 == "pB" || arg2 == "pB") {
+            
+        }else {
+            console.log("Somthing went wrong in dataSearch() - arg1= " + arg1 + " arg2 = " + arg2);
+        }
+    } else {
+        console.log("Somthing went wrong in dataSearch() - arg1= " + arg1 + " arg2 = " + arg2);
+    }
+}
